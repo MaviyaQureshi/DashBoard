@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;0,700;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Client {
+  display: flex;
+  align-items: center;
+}
+
+.leftSide {
+  width: 25vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f7fc;
+}
+
+img {
+  margin-top: 30px;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: black 2px solid;
+  margin-bottom: 10px;
+}
+
+.UserName {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+
+.Role {
+  font-size: 16px;
+  font-style: oblique;
+  font-family: "Fira Sans Condensed", sans-serif;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  text-align: left;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: inherit;
+  /* You can change this color */
+  color: rgba(0, 0, 0, 0.563);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  width: 300px;
+  height: 60px;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: rgba(84, 84, 84, 0.14);
+}
+
+.RightSide {
+  background-color: #007bff;
+  right: 0;
+  width: 75vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ExpenseTracker {
+  width: 1100px;
+  height: 360px;
+  top: 30px;
+  right: 20px;
+  position: fixed;
+  background-color: white;
+}
+
+.Todo {
+  width: 540px;
+  height: 360px;
+  top: 410px;
+  right: 580px;
+  position: fixed;
+  background-color: white;
+}
+
+.Ticker {
+  overflow-y: scroll;
+  width: 540px;
+  height: 360px;
+  top: 410px;
+  right: 20px;
+  position: fixed;
+  background-color: white;
+}
+
+.logos {
+  margin-right: 20px;
+  color: #623ce7;
+}
+
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 520px;
+  min-height: 600px;
+  background: #161a2b;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+h1 {
+  margin: 32px 0;
+  color: #fff;
+  font-size: 24px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #5d0cff;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #e2e2e2;
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(90deg,
+      rgba(93, 12, 255, 1) 0%,
+      rgba(155, 0, 250, 1) 100%);
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.todo-input.edit {
+  border: 2px solid #149fff;
+}
+
+.todo-button.edit {
+  background: linear-gradient(90deg,
+      rgba(20, 159, 255, 1) 0%,
+      rgba(17, 122, 255, 1) 100%);
+  padding: 16px 22px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background: linear-gradient(90deg,
+      rgba(255, 118, 20, 1) 0%,
+      rgba(255, 84, 17, 1) 100%);
+
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.todo-row:nth-child(4n + 1) {
+  background: linear-gradient(90deg,
+      rgba(93, 12, 255, 1) 0%,
+      rgba(155, 0, 250, 1) 100%);
+}
+
+.todo-row:nth-child(4n + 2) {
+  background: linear-gradient(90deg,
+      rgba(255, 12, 241, 1) 0%,
+      rgba(250, 0, 135, 1) 100%);
+}
+
+.todo-row:nth-child(4n + 3) {
+  background: linear-gradient(90deg,
+      rgba(20, 159, 255, 1) 0%,
+      rgba(17, 122, 255, 1) 100%);
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #fff;
+}
+
+.edit-icon {
+  color: #fff;
+}
+
+
+
+.events {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #9c88ff;
+  height: 75px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.past {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: lightgray;
+  border-bottom: 1px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.feedback {
+  margin-right: 20px;
+  font-size: 12px;
+  background: none;
+  border: none;
+}
+
+.numberev {
+  margin-left: 20px;
+}

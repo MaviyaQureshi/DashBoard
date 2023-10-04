@@ -1,0 +1,12 @@
+.DashBoard-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: "red";
+    height: 300px;
+    width: 350px;
+    border-radius: 10px;
+    position: relative;
+    top: 30px;
+    left: 750px
+}
